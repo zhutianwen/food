@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>用户编号<input type="text" id="uid"></div>
+	<div>用户名称<input type="text" id="uname"></div>
+	<div>用户密码<input type="password" id="upwd"></div>
+	<div>用户手机<input type="text" id="phone"></div>
+	<div>用户邮箱<input type="text" id="email"></div>
+	<input type="button" value="post登录" onclick="post_msg()"></input>
+	<script>
+	   function post_msg(){
+	      //1.获取小黄人对象
+		  var xhr=new XMLHttpRequest();
+		  //2.绑定监听事件
+		  xhr.onreadystatechange=function(){
+		      if(xhr.readyState==4 && xhr.status==200){
+			      var result=xhr.responseText;
+				  //console.log(result);
+			  }
+		  }
+		  //3.打开连接，创建请求
+		  xhr.open("post","/user/loginpost",true);
+		  //4.发送请求
+	  var formdata="uid="+uid.value+"&uname="+uname.value+"&upwd="+upwd.value+"&phone="+phone.value+"&email="+email.value;
+		  //console.log(formdata);
+		  //修改请求头，可以发送任意文本
+ 	xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+	       xhr.send(formdata);
+	}
+	</script>
+</body>
+</html>
