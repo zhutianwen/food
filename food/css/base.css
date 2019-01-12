@@ -1,0 +1,151 @@
+body{
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+}
+a:hover{
+    text-decoration: none;
+}
+.my-small{
+    font-size:0.8rem;
+}
+.my-color a{
+    color:#000;
+}
+.my-img{
+    width:100px;
+    height:100px;
+}
+.my-img_style li a img,
+.my-img_style1 li a img,
+.my-img_style2 li a img,
+.my-img_style3 li a img{
+    border-radius:5%;
+}
+
+.my-img_style p a,
+.my-img_style1 p a,
+.my-img_style2 p a,
+.my-img_style3 p a{
+    color:#000;
+}
+.my-img_style p a:hover,
+.my-img_style1 p a:hover,
+.my-img_style2 p a:hover,
+.my-img_style3 p a:hover{
+    color:#ffc107;
+}
+.my-img_style1 li a img{
+    width:16rem;
+    height:15rem;
+}
+.my-img_style2 li a img{
+    width:8rem;
+    height:8rem;
+}
+.my-img_style2 li p{
+    text-align:center;
+}
+.my-img_style3 li a img{
+    width:15rem;
+    height:10rem;
+}
+
+
+/*设置头和脚的宽度*/
+.my-header iframe,.my-footer iframe{
+    width:100%;
+}
+
+.iframe-footer iframe{
+    height:300px;
+}
+.my-decoration a:hover{
+    text-decoration:none;
+    font-size: 20px;
+}
+
+.carousel-indicators li{
+    width:15px;
+    height:15px;
+    background:#fff;
+    border-radius:50%;
+}
+.carousel-indicators .active{
+    background:#0aa1ed;
+}
+.carousel-indicators{
+   justify-content:flex-end;
+    margin-right:5%;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    width:3%;
+    height:15%;
+    top:45%;
+    background:rgba(0,0,0,0.5);
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover{
+    background:rgba(0,0,0,0.9);
+}
+@media (max-width:400px) {
+    .my-img_style li a img{
+        width:18rem;
+        height:18rem;
+    }
+    .iframe-footer iframe{
+        height:40rem;
+    }
+}
+
+@media screen and (min-width:401px) and (max-width: 576px) {
+    .my-header iframe{
+        height:17rem;
+    }
+    .iframe-footer iframe{
+        height:40rem;
+    }
+.my-img_style li a img{
+    width:27rem;
+    height:25rem;
+}
+}
+@media (min-width: 576px) {
+    .my-header iframe{
+        height:17rem;
+    }
+    .iframe-footer iframe{
+        height:32rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .my-header iframe{
+      height:11rem;
+  }
+    .iframe-footer iframe{
+        height:32rem
+    }
+}
+
+@media (min-width: 992px) {
+    .my-header iframe{
+        height:8rem;
+    }
+    .iframe-footer iframe{
+        height:22rem
+    }
+}
+
+@media (min-width: 1200px) {
+    .my-header iframe{
+        height:8rem;
+    }
+    .iframe-footer iframe{
+        height:20rem;
+    }
+}
+
+/*身子*/
