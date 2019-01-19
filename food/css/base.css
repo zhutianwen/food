@@ -12,6 +12,9 @@ a:hover{
 .my-color a{
     color:#000;
 }
+.my-color a:hover{
+    color:#ffc107;
+}
 .my-img{
     width:100px;
     height:100px;
@@ -91,6 +94,9 @@ a:hover{
     background:rgba(0,0,0,0.9);
 }
 @media (max-width:400px) {
+    .my-header iframe{
+        height:16rem;
+    }
     .my-img_style li a img{
         width:18rem;
         height:18rem;
@@ -123,7 +129,7 @@ a:hover{
 
 @media (min-width: 768px) {
     .my-header iframe{
-      height:11rem;
+      height:13rem;
   }
     .iframe-footer iframe{
         height:32rem
@@ -132,7 +138,7 @@ a:hover{
 
 @media (min-width: 992px) {
     .my-header iframe{
-        height:8rem;
+        height:9rem;
     }
     .iframe-footer iframe{
         height:22rem
@@ -148,4 +154,85 @@ a:hover{
     }
 }
 
-/*Éí×Ó*/
+/*µÇÂ¼*/
+
+.my-login table{
+    width:18rem;
+    height:20rem;
+}
+.my-login table a{
+    color:#000;
+}
+.my-login table tr th a h4{
+    text-align:left;
+    font-size:1.2rem;
+}
+.my-login table tr th a h6{
+    text-align:right;
+    font-size:1rem;
+    color:#3ea000;
+}
+.my-login table tr th a h6:hover{
+    color:#ffc107;
+}
+.login,.login1,.login2{
+    border-radius:0.2rem;
+    border:1px solid #deded3;
+}
+.login1,.login2{
+    font-size:0.8rem;
+}
+.login{
+background-color:#FFB31A;
+    height:2rem;
+    color:#fff;
+    font-size:0.8rem;
+}
+.login,.login1,.login2{
+    width:15rem;
+}
+.my-login table tr:nth-child(4) td{
+    text-align:left;
+    text-indent:1.5rem;
+    font-size:0.8rem;
+}
+.my-login table tr:nth-child(6) td{
+    text-align:left;
+    text-indent:1.5rem;
+    font-size:0.8rem;
+}
+.my-login table tr:nth-child(7) td{
+    text-align:left;
+    text-indent:1.5rem;
+    font-size:0.8rem;
+}
+
+
+/*×¢²á*/
+.my-sig tr{
+    height:4rem;
+}
+.my-sig tr:not(:first-child){
+    vertical-align:top;
+}
+.my-sig p{
+    font-size:0.2rem;
+}
+.my-sig input,.my-sig button{
+    font-size:0.8rem;
+    line-height:2.5rem;
+    border-radius:0.2rem;
+    border:1px solid #deded3;
+}
+.my-sig tr:first-child>td input,
+.my-sig tr:nth-child(2)>td input,
+.my-sig tr:nth-child(3)>td input,
+.my-sig tr:nth-child(4)>td input{
+   width:20rem;
+}
+.my-sig tr:nth-child(7) button{
+    width:20rem;
+    background-color:#FFB31A;
+    color:#fff;
+}
+
