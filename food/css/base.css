@@ -153,9 +153,47 @@ a:hover{
         height:20rem;
     }
 }
+/*¬÷≤•*/
+.my-banner{
+    position:relative;
+}
+.my-banner img{
+    height:25rem;
+}
+.my-banner1{
+    width:15rem;
+    position:absolute;
+    z-index:10;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.5);
+}
+.my-banner1 li{
+    width:15rem;
+    height:3rem;
+    line-height:3rem;
+    text-align: left;
+    text-indent:1.5rem;
+    margin-bottom:1rem;
+
+}
+.my-banner1 ul{
+    height:25rem;
+    margin-top:3rem;
+}
+.my-banner1 ul li a,.my-banner1 ul li span{
+    color:#fff !important;
+}
+
+.my-banner1 ul li:hover{
+    background:#ff7676;
+}
+/*◊Û”“º˝Õ∑*/
+.my-prev{
+    left:15rem;
+}
 
 /*µ«¬º*/
-
 .my-login table{
     width:18rem;
     height:20rem;
@@ -166,10 +204,12 @@ a:hover{
 .my-login table tr th a h4{
     text-align:left;
     font-size:1.2rem;
+    margin-left:0.5rem;
 }
 .my-login table tr th a h6{
     text-align:right;
     font-size:1rem;
+    margin-right:0.5rem;
     color:#3ea000;
 }
 .my-login table tr th a h6:hover{
@@ -208,7 +248,9 @@ background-color:#FFB31A;
 }
 
 
+
 /*◊¢≤·*/
+
 .my-sig tr{
     height:4rem;
 }
@@ -234,5 +276,102 @@ background-color:#FFB31A;
     width:20rem;
     background-color:#FFB31A;
     color:#fff;
+}
+
+/*÷˜Ã‚’æ*/
+.my-words p{
+    font-size:1rem;
+}
+.my-cont{
+    width:40rem;
+}
+.my-cont1{
+    width:42rem;
+}
+.my-cont2{
+    width:44rem;
+}
+.my-cont3{
+    width:36rem;
+}
+.my-cont4{
+    width:34rem;
+}
+.container>div ul li a{
+    color:#000;
+}
+
+.my-w{
+    width:25rem;
+}
+
+/* …Ã≥«*/
+.my-img1 li a img{
+    width:15rem;
+    height:15rem;
+
+}
+.my-img1 li h3{
+    margin-top:0.8rem;
+    width:15rem;
+    font-size:1.1rem;
+}
+.my-img1 li div{
+    margin-bottom:3rem;
+}
+.old-price{
+    display: inline-block;
+    font-size:0.1rem;
+    color: #999;
+    line-height:1rem;
+}
+
+/*item*/
+
+.img1{
+    width:4rem;
+    height:4rem;
+    border:1px solid #ffc107;
+    vertical-align: top;
+}
+.img2{
+    width:18rem;
+    height:18rem;
+}
+.my-w h3{
+    font-size:1.2rem;
+    font-weight: 600;
+}
+
+.my-w p{
+    color:#999;
+    font-size:0.9rem;
+}
+
+.my-s span{
+    color:#FF4C44;
+    font-size:1.5rem;
+}
+.my-s s{
+    font-size:0.8rem;
+    color:#999;
+}
+.my-input{
+    width:4rem;
+    text-align: center;
+}
+.my-w1 span{
+    font-size:0.8rem;
+}
+.img3 img{
+    width:36rem;
+
+}
+.img4 img{
+    width:15rem;
+    height:15rem;
+}
+.my-btn{
+    border-radius:0.2rem;
 }
 
