@@ -9,6 +9,8 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/nav.js"></script>
     <link rel="stylesheet" href="css/base.css"/>
 </head>
 <body>
@@ -55,12 +57,13 @@
         </a>
          </div>
         <div class="my-banner1">
-            <ul class="list-unstyled">
+            <ul class="list-unstyled position-relative">
                 <li>
                     <a href="#">
                         菜谱大全
                     </a>
                     <span class="d-inline-block float-right mr-4">&gt;</span>
+
                 </li>
 
                 <li>
@@ -89,7 +92,9 @@
                 </li>
             </ul>
         </div>
+
 </div>
+
         <!-- 左右箭头-->
         <a href="#my-car" class="carousel-control-prev my-prev" data-slide-to="prev">
             <span class="carousel-control-prev-icon"></span>
@@ -97,8 +102,38 @@
         <a href="#my-car" class="carousel-control-next" data-slide-to="next">
             <span class="carousel-control-next-icon"></span>
         </a>
-
     </div>
+<!--下我瞎改的-->
+    <div class="position-absolute" id="my-pos">
+        <ul class="list-unstyled  d-flex justify-content-around my-ul ">
+            <li>
+                <ul class="list-unstyled my-li">
+                    <li><a href="#">一周热门</a></li>
+                    <li><a href="#">人气菜肴</a></li>
+                    <li><a href="#">冬季食谱</a></li>
+                    <li><a href="#">早餐</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="list-unstyled my-li1">
+                    <li><a href="#">高颜值</a></li>
+                    <li><a href="#">凉菜</a></li>
+                    <li><a href="#">热菜</a></li>
+                    <li><a href="#">主食</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="list-unstyled my-li2">
+                    <li><a href="#">小吃</a></li>
+                    <li><a href="#">酱泡腌菜</a></li>
+                    <li><a href="#">新秀菜谱</a></li>
+                    <li><a href="#">所有分类</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--上我瞎改的-->
+
 </div>
     <!-- 中间部分-->
     <div class="row m-0">
@@ -277,6 +312,9 @@
     </div>
 </div>
 </div>
+
+
+
 <footer class="my-footer iframe-footer">
     <iframe src="footer.html" frameborder="0" scrolling="no"></iframe>
 </footer>

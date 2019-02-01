@@ -168,7 +168,7 @@ a:hover{
     left:0;
     background:rgba(0,0,0,0.5);
 }
-.my-banner1 li{
+.my-banner1 ul>li{
     width:15rem;
     height:3rem;
     line-height:3rem;
@@ -177,16 +177,45 @@ a:hover{
     margin-bottom:1rem;
 
 }
-.my-banner1 ul{
+.my-banner1>ul{
     height:25rem;
     margin-top:3rem;
 }
-.my-banner1 ul li a,.my-banner1 ul li span{
+.my-banner1 ul>li a,.my-banner1 ul>li span{
     color:#fff !important;
 }
 
-.my-banner1 ul li:hover{
+.my-banner1 ul>li:hover{
     background:#ff7676;
+}
+#my-pos{
+    margin-left:15rem;
+    top:0;
+     bottom:100px;
+     width:35rem;
+    height:25rem;
+     background:#fff;
+     z-index:10;
+     display:none;
+     box-shadow:0 0 8px #000;
+}
+/*#my-pos ul{*/
+    /*width:50rem;*/
+/*}*/
+.my-pos :hover ul{
+    display:block;
+}
+#my-pos ul li a:hover{
+    color:#ff6767;
+}
+.my-li li{
+    margin-top:4rem;
+}
+.my-li1 li{
+    margin-top:4rem;
+}
+.my-li2 li{
+    margin-top:4rem;
 }
 /*×óÓÒ¼ýÍ·*/
 .my-prev{
