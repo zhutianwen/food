@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <!-- 引入boot文件 引入顺序有要求-->
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/base.css"/>
+
+</head>
+<body>
+<header class="my-header">
+    <iframe src="header.html" frameborder="0" scrolling="no"></iframe>
+</header>
+<div class="container bg-white">
+    <table></table>
+<div class="d-flex justify-content-between mt-2 col-sm-12 col-md-12 col-lg-12">
+    <h6>新用户注册</h6>
+    <h6>已有账号，<a href="login.html" target="_parent">直接登录 ></a></h6>
+</div>
+
+    <table class="m-auto my-sig">
+        <tr>
+            <td colspan="2">
+                <input type="text" placeholder="请输入手机号" id="phone" name="phone"/>
+                <p class="m-0 mt-2">请输入手机号输入常用的手机号，便于登录和找回密码</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="p-0">
+                <input type="text" placeholder="请输入昵称" id="uname" name="uname" onblur="checkUname()"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="text" placeholder="请输入密码" id="upwd" name="upwd"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="text" placeholder="确认密码"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="d-flex justify-content-between">
+                <input type="text" placeholder="输入验证码"/>
+                <button>获取验证码</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <span>
+                    <input type="checkbox"/>
+                我已阅读并且同意
+                <a href="#">豆果美食使用协议</a>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="sig()">注册</button>
+            </td>
+        </tr>
+    </table>
+</div>
+<script>
+    function sig(){
+    //1.创建异步对象xhr
+    var xhr=new XMLHttpRequest();
+    //2.绑定及监听
+    xhr.onreadystatechange=function(){
+        if(xhr.readyState==4 && xhr.status==200){
+            var result=xhr.responseText;
+            var res = JSON.parse(result);
+            //console.log(res.code);
+            if(res.code==1){
+                location.href ="index.html";
+            }
+            if(res.code == 444){
+                alert(res.msg);
+            };
+            if(res.code==445){
+                alert(res.msg);
+            };
+            if(res.code==446){
+                alert(res.msg);
+            };
+        }
+    }
+    //3.打开连接
+    var un=uname.value;
+    var up=upwd.value;
+    var ph=phone.value;
+    var url="/user/reg?uname="+un+"&upwd="+up+"&phone="+ph;
+    // console.log(url);
+    xhr.open("get",url,true);
+    //4.发送请求
+    xhr.send(null)
+}
+
+
+function checkUname(){
+    //1.创建异步对象xhr
+    var xhr=new XMLHttpRequest();
+    //2.绑定及监听
+    xhr.onreadystatechange=function(){
+        if(xhr.readyState==4 && xhr.status==200){
+            var result=xhr.responseText;
+            if(result==1){
+                alert("用户名已存在");
+            }else if(reult==0){
+                alert("可注册");
+            }
+        }
+    }
+    //3.打开连接
+    var url="/user/checkUname?uname="+uname.value;
+    // console.log(url);
+    xhr.open("get",url,true);
+    //4.发送请求
+    xhr.send(null)
+}
+
+
+</script>
+</body>
+</html>
