@@ -21,6 +21,7 @@ router.get('/checkUname',(req,res)=>{
 	   }
    })
 });
+
 //1.用户注册
 router.get('/reg',(req,res)=>{
 	//获取get请求的数据
@@ -74,7 +75,30 @@ pool.query(sql,[obj],(err,result)=>{
 
 });
 
-
+//用户登录
+router.post("/login",(req,res)=>{
+	var $phone=req.body.phone;
+	var $upwd=req.body.upwd;
+	if(!$phone){
+		res.send("用户名不存在");
+		return;
+	}
+	if(!$upwd){
+		res.send("密码不存在");
+		return;
+	}
+	var sql="SELECT * FROM food_user WHERE phone=? AND upwd=?";
+	pool.query(sql,[$phone,$upwd],(err,result)=>{
+		if(err) throw err;
+		//console.log(result);
+		
+		if(result.length>0){
+			res.send("登录成功")
+		}else{
+			res.send("登录失败")
+		}
+	})
+})
 
 
 
