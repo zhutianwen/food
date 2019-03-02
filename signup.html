@@ -33,12 +33,12 @@
 
         <tr>
             <td colspan="2" class="p-0">
-                <input type="text" placeholder="请输入昵称" id="uname" name="uname" onblur="checkUname()"/>
+                <input type="text" placeholder="请输入昵称 3~5位汉字" id="uname" name="uname" onblur="checkUname()"/>
             </td>
         </tr>
         <tr>
             <td colspan="2">
-                <input type="text" placeholder="请输入密码" id="upwd" name="upwd"/>
+                <input type="password" placeholder="请输入密码  6~8位数字" id="upwd" name="upwd"/>
             </td>
         </tr>
         <tr>
@@ -79,8 +79,10 @@
             var res = JSON.parse(result);
             //console.log(res.code);
             if(res.code==1){
-                location.href ="index.html";
+                alert("注册成功");
+                location.href ="login.html";
             }
+
             if(res.code == 444){
                 alert(res.msg);
             };

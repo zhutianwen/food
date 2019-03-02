@@ -30,12 +30,12 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <input class="login1" type="text" placeholder="请输入手机号/邮箱"/>
+                            <input class="login1" type="text" placeholder="请输入手机号/邮箱" name="phone" id="phone"/>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <input class="login2" type="password" placeholder="请输入密码"/>
+                            <input class="login2" type="password" placeholder="请输入密码" name="upwd" id="upwd"/>
                         </td>
                     </tr>
                     <tr>
@@ -45,7 +45,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <button class="login border-0">登录</button>
+                            <button class="login border-0" onclick="login()">登录</button>
                         </td>
                     </tr>
                     <tr>
@@ -62,5 +62,31 @@
         </div>
     </div>
 </div>
+<script>
+    function login(){
+        //1.创建xhr对象
+        var xhr=new XMLHttpRequest();
+        //2.绑定及监听
+        xhr.onreadystatechange=function(){
+            console.log(11111)
+            if(xhr.readyState==4 && xhr.status==200){
+                var result=xhr.responseText; 
+               // console.log(result)
+                if(result=="登录失败"){
+                alert("登录失败");
+            }else{
+                location.href ="index.html";
+            };
+            }
+        }
+        //3.打开连接
+        xhr.open("post","/user/login",true);
+        var formdata="phone="+phone.value+"&upwd="+upwd.value;
+        //设置请求头 发送任意文本
+        xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded")
+        //4.发送请求
+        xhr.send(formdata);
+    }
+</script>
 </body>
 </html>>
