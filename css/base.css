@@ -55,7 +55,7 @@ a:hover{
 }
 
 
-/*ÉèÖÃÍ·ºÍ½ÅµÄ¿í¶È*/
+/*ï¿½ï¿½ï¿½ï¿½Í·ï¿½Í½ÅµÄ¿ï¿½ï¿½*/
 .my-header iframe,.my-footer iframe{
     width:100%;
 }
@@ -153,7 +153,7 @@ a:hover{
         height:20rem;
     }
 }
-/*ÂÖ²¥*/
+/*ï¿½Ö²ï¿½*/
 /*.my-banner{*/
     /*position:relative;*/
 /*}*/
@@ -217,12 +217,12 @@ a:hover{
 /*.my-li2 li{*/
     /*margin-top:4rem;*/
 /*}*/
-/*×óÓÒ¼ýÍ·*/
+/*ï¿½ï¿½ï¿½Ò¼ï¿½Í·*/
 /*.my-prev{*/
     /*left:15rem;*/
 /*}*/
 
-/*µÇÂ¼*/
+/*ï¿½ï¿½Â¼*/
 .my-login table{
     width:18rem;
     height:20rem;
@@ -246,7 +246,7 @@ a:hover{
 }
 .login,.login1,.login2{
     border-radius:0.2rem;
-    border:1px solid #deded3;
+    border:1px solid #deded3; 
 }
 .login1,.login2{
     font-size:0.8rem;
@@ -258,8 +258,17 @@ background-color:#FFB31A;
     font-size:0.8rem;
 }
 .login,.login1,.login2{
-    width:15rem;
+    width:11rem;
+    margin-right:2.3rem 
+
 }
+.txt_focus1{
+	border-top:2px solid black;
+    border-left:2px solid black;
+    border-radius:0.2rem;
+    width:11rem;
+}
+
 .my-login table tr:nth-child(4) td{
     text-align:left;
     text-indent:1.5rem;
@@ -278,7 +287,7 @@ background-color:#FFB31A;
 
 
 
-/*×¢²á*/
+/*×¢ï¿½ï¿½*/
 
 .my-sig tr{
     height:4rem;
@@ -307,7 +316,7 @@ background-color:#FFB31A;
     color:#fff;
 }
 
-/*Ö÷ÌâÕ¾*/
+/*ï¿½ï¿½ï¿½ï¿½Õ¾*/
 .my-words p{
     font-size:1rem;
 }
@@ -334,7 +343,7 @@ background-color:#FFB31A;
     width:25rem;
 }
 
-/* ÉÌ³Ç*/
+/* ï¿½Ì³ï¿½*/
 .my-img1 li a img{
     width:15rem;
     height:15rem;

@@ -1,0 +1,29 @@
+.vali_info{/* ҳ���ʼ����֤��Ϣ����ʾ */
+	display:none;	
+}
+.txt_focus{
+	border-top:2px solid black;
+	border-left:2px solid black;
+}
+.vali_success,.vali_fail{
+	background-repeat:no-repeat;
+    background-position:left center;
+	display:block;
+}
+
+.vali_success{
+    background-image:url("../img/ok.png");
+	padding-left:30px;
+	width:30px;
+	height:30px;
+	
+}
+.vali_fail{
+	width:30px;
+	height:30px;
+    background-image:url("../img/err.png");
+    color:Red;
+	padding-left:30px;
+	
+} 
+
