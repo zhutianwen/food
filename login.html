@@ -10,6 +10,7 @@
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/01.css"/>
 </head>
 <body>
 <header class="my-header">
@@ -30,12 +31,22 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <input class="login1" type="text" placeholder="请输入手机号/邮箱" name="phone" id="phone"/>
+                            <input class="login1" type="text" placeholder="请输入手机号" name="phone" id="phone"/>
+                        </td>     
+                        <td>
+                            <div class="vali_info">
+                               11位数字
+                            </div>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2">
                             <input class="login2" type="password" placeholder="请输入密码" name="upwd" id="upwd"/>
+                        </td>
+                        <td>
+                            <div class="vali_info">
+                                6-8位数字
+                            </div>
                         </td>
                     </tr>
                     <tr>
@@ -88,5 +99,6 @@
         xhr.send(formdata);
     }
 </script>
+<script src="../js/01.js"></script>
 </body>
 </html>>
